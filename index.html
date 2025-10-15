@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RZ DApp</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo-wrapper">
+                <img src="assets/logo.png" alt="Logo" class="logo">
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li data-page="home">Home</li>
+                    <li data-page="tokenAdd">Token Add</li>
+                    <li data-page="rzMarket">RZ Market</li>
+                    <li data-page="trade">Trade</li>
+                    <li data-page="portfolio">Portfolio</li>
+                </ul>
+            </nav>
+            <div id="hamburger" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Pages -->
+    <div id="home" class="spa-page active">
+        <div class="main-container">
+            <div class="hero-section">
+                <video id="bg-video" autoplay loop muted>
+                    <source src="assets/video-background.mp4" type="video/mp4">
+                </video>
+                <div class="hero-content">
+                    <h1 class="hero-title">Welcome to RZ DApp</h1>
+                    <p class="hero-subtitle">Manage, Trade, and Track Your Tokens</p>
+                    <button id="connectWalletBtn" class="connect-btn">Connect Wallet</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="tokenAdd" class="spa-page">
+        <h2>Token Add</h2>
+        <!-- محتویات صفحه اضافه کردن توکن‌ها اینجا قرار می‌گیرد -->
+    </div>
+
+    <div id="rzMarket" class="spa-page">
+        <h2>RZ Market</h2>
+        <!-- محتویات صفحه بازار توکن‌ها اینجا قرار می‌گیرد -->
+    </div>
+
+    <div id="trade" class="spa-page">
+        <h2>Trade</h2>
+        <!-- محتویات صفحه خرید/فروش اینجا قرار می‌گیرد -->
+    </div>
+
+    <div id="portfolio" class="spa-page">
+        <h2>Portfolio</h2>
+        <!-- محتویات صفحه پورتفوی اینجا قرار می‌گیرد -->
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
