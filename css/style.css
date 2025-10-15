@@ -1,0 +1,131 @@
+/* مشابه استایلی که شما قبلاً ارسال کردید */
+:root {
+    --primary-color: #007bff;
+    --primary-hover-color: #0056b3;
+    --background-color: #121212;
+    --text-color: #ffffff;
+    --text-secondary-color: #a0a0a0;
+}
+
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #000;
+    color: var(--text-color);
+    min-height: 100vh;
+}
+
+/* ===== Header ===== */
+.main-header {
+    background-color: #000;
+    height: 90px; 
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.header-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.logo-wrapper img.logo {
+    max-height: 32px; 
+    width: auto;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-menu li {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.nav-menu li:hover {
+    color: var(--primary-color);
+}
+
+/* Hamburger Icon */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+}
+.hamburger span {
+    width: 28px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+/* ===== Pages ===== */
+.spa-page {
+    display: none;
+    padding: 20px;
+    text-align: center;
+}
+.spa-page.active {
+    display: block;
+}
+
+/* ===== Home Page ===== */
+.main-container { max-width: 1200px; margin: auto; padding: 20px; }
+.logo-wrapper { text-align: center; margin-bottom: 25px; }
+.logo { max-height: 100px; width: auto; }
+
+.hero-section {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    padding: 60px 40px;
+    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.37);
+}
+
+#bg-video {
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%; min-height: 100%;
+    object-fit: cover; z-index: 0;
+}
+
+.hero-section::before {
+    content: ''; position: absolute; inset: 0;
+    background-color: rgba(10,10,10,0.45);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    z-index: 1;
+}
+
+.hero-content { position: relative; z-index: 2; }
+.hero-title { font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem; }
+.hero-subtitle { font-size: 1.1rem; color: var(--text-secondary-color); margin-bottom: 2.5rem; }
+
+.connect-btn {
+    background: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 50px;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,123,255,0.4);
+}
+.connect-btn:hover {
+    background: var(--primary-hover-color);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0,123,255,0.5);
+}
